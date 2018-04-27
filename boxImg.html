@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="boxImg.css">
+    <script src="boxImg.js"></script>
+    <style>
+        .jf-boxImg img{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<p>点击图片</p>
+<div class="jf-boxImg">
+    <img modal="zoomImg" src="img/dlam002.png" alt="">
+    <img modal="zoomImg" src="img/dlam003.png" alt="">
+    <img modal="zoomImg" src="img/dlam006.png" alt="">
+    <img modal="zoomImg" src="img/dlam006-a.png" alt="">
+    <img modal="zoomImg" src="img/dlamda0211.png" alt="">
+</div>
+<script src="jquery-1.12.4.js"></script>
+<script src="boxImg.js"></script>
+<script>
+new window['boxImg']({
+    $el:$('.jf-boxImg'),
+    $boxel:$('.mask-layer-container'),
+    boxImgWd:'800px',
+    boxImgHg:'600px',
+})
+</script>
+</body>
+</html>
